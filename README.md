@@ -14,5 +14,6 @@ conda activate Information_fidelity
 ## Inference
 
 ```
-python3 similarity.py
+python similarity.py
 ```
+PS. Please update your OpenAI API key in similarity.py line 155 before run Python script
