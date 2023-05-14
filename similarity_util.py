@@ -42,7 +42,7 @@ def get_sliding_sentences(df, size):
     return pd.DataFrame(zip(sent_ids, original_sentences, translation_1_sentences, translation_2_sentences), 
                                 columns=['sent_id', 'Original', 'Translation_1', 'Translation_2'])
 
-# calculate similarity use universal-sentence-encoder-multilingual_3 model
+# Calculate similarity use universal-sentence-encoder-multilingual_3 model
 def calculate_similarity_usem(df):
     sent_ids = df['sent_id'].tolist()
     original_sents = df["Original"].tolist()
@@ -78,7 +78,7 @@ def calculate_similarity_usem(df):
     
     return df_sim_tf
     
-# use Transformers to do sentence embed and calculate similarity
+# Calculate similarity use Transformers model
 def calculate_similarity_transformers(df):
     
     model_transformers = SentenceTransformer('all-MiniLM-L6-v2')
@@ -110,7 +110,7 @@ def calculate_similarity_transformers(df):
     
     return df_sim_transformer
     
-# use OpenAI to do sentence embed
+# Calculate similarity use OpenAI text-embedding-ada-002 model 
 def calculate_similarity_openai(df):
 
     openai.api_key = 'replace with you OpenAI key' 
