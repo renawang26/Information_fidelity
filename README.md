@@ -1,4 +1,4 @@
-# Information_fidelity
+# Information Fidelity
 
 This repository is intended to provide the interpretation fidelity utility and run inference.
 
