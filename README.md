@@ -4,7 +4,7 @@ This repository is intended to provide the interpretation fidelity utility and r
 
 ## Setup
 
-In a conda env , run:
+In a conda env, run:
 ```
 conda env create -f ./environment.yml
 
