@@ -13,6 +13,7 @@ from tensorflow_text import SentencepieceTokenizer
 from sentence_transformers import SentenceTransformer
 from scipy.spatial.distance import cosine
 
+# format sliding sentences 
 def sliding_window_iter(series, size):
     """series is a column of a dataframe"""
     for start_row in range(len(series) - size + 1):
