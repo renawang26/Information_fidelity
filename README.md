@@ -14,7 +14,7 @@ conda activate Information_fidelity
 ## Inference
 * Please update your OpenAI API key in similarity.py line 155 before running Python script
 * Ensure Interpreter_Evaluation.xlsx is located in the same folder with similarity.py
-* The similarity calculation result will be predocued and saved in similarity.xlsx
+* The similarity calculation result will be produced and saved in similarity.xlsx
 
 ```
 python similarity.py
